@@ -4,6 +4,7 @@ const geminiEmbeddings = require("../utils/geminiEmbeddings");
 const pineconeClient = require("../utils/pineconeClient");
 const ragChatbot = require("../utils/ragChatbot");
 const crypto = require("crypto");
+
 const uploadResume = async (req, res) => {
   if (!req.file) {
     return res.status(400).send("No file uploaded.");
